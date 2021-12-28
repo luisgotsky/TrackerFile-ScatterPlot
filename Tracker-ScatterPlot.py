@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 entrada = open(input("Route of input file: "), "r")
-salida = input("Route of output file (without extension): ")
+salida = input("Name of output file (without extension): ")
 
 primeraVez = True
 t = []
