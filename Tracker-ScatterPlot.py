@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 
-entrada = open(input(), "r")
+entrada = open(input("Route of input file: "), "r")
+salida = input("Route of output file (without extension): ")
 
 primeraVez = True
 t = []
@@ -20,7 +21,7 @@ plt.figure(figsize=(10,4))
 
 plt.scatter(t[:150], x[:150])
 
-plt.xlabel("t(s)")
-plt.ylabel("y(m)")
+plt.xlabel("t")
+plt.ylabel("y")
 
-plt.savefig("Bola metal, agua.png", dpi=1200)
+plt.savefig(salida + ".png", dpi=1200)
